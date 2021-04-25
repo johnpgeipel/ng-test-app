@@ -35,3 +35,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `$ ng build --prod --base-href https://johnpgeipel.github.io/ng-test-app/`
 
 `$ ngh --dir=dist/ng-test-app`
+## Added `"deploy"` Script to `package.json`
+This allows for the one step build and deployment to gh-pages with the command ```npm run deploy```. After making changes to `src`, add, commit and push to main branch, then run `npm run deploy` to update app.
+```
+"scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "deploy": "ng build --prod --base-href https://johnpgeipel.github.io/ng-test-app/ && ngh --dir=dist/ng-test-app"
+  },
+```
