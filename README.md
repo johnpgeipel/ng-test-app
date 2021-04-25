@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Deploy to Github Pages
+[Tutorial Method #1](https://www.logic24by7.com/how-to-deploy-an-angular-app-to-github-pages/)
+
+## Deploy Changes
+`save changes > stage > commit > push to main`
+
+`$ ng build --prod --base-href https://johnpgeipel.github.io/ng-test-app/`
+
+`$ ngh --dir=dist/ng-test-app`
