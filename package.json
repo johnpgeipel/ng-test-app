@@ -8,7 +8,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "main": "git add . && git commit -m 'commit' && git push",
     "deploy": "ng build --prod --base-href https://johnpgeipel.github.io/ng-test-app/ && ngh --dir=dist/ng-test-app"
   },
   "private": true,
